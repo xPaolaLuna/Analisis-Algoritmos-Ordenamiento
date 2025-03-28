@@ -211,4 +211,10 @@ INCREMENTO: Incremento en el la longitud del vector cada que pase una prueba.
 
 ## Resultados
 
-El resultado que obtuvimos son los archivos con extensión .csv
+El resultado que obtuvimos son los archivos con extensión .csv ubicados en la carpeta donde se guardó y ejectuó el proyecto. Estos datos se pueden observar de mejor manera en un editor de hojas de cálculo como lo es excel.
+
+## Conclusiones
+
+## Alumna
+
+Luna Palafox Ana Paola
