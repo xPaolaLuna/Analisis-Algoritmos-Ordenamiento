@@ -215,7 +215,15 @@ El resultado que obtuvimos son los archivos con extensión .csv ubicados en la c
 
 ## Conclusiones
 Concluímos que en promedio hay ciertos algoritmos mejores que otros, y según nuestros resultados, el orden en base a los mejores con grandes cantidades de datos son:
+1.- Ordenamiento Rápido
+2.- Ordenamiento por Mezcla
+3.- Ordenamiento Shell
+4.- Ordenamiento por Montículo
+5.- Ordenamiento por Inserción
+6.- Ordenamiento por Selección
+7.- Ordenamiento por Burbuja
 
+![Ordenamientos](Ordenamientos.png)
 
 ## Alumna
 
