@@ -50,6 +50,7 @@ El tiempo pasado durante la ejecución de un algoritmo se guarda en un cronómet
 El algoritmo de inserción es un método sencillo de ordenamiento que construye una lista ordenada agregando elementos en su ubicación correcta dentro de la parte ya organizada.
 
 Funcionamiento
+
 Se inicia con el segundo elemento, ya que el primero se considera ordenado.
 
 Se compara el elemento actual con los anteriores.
@@ -61,6 +62,7 @@ Se coloca el elemento en su posición correspondiente.
 Se repite este proceso hasta ordenar toda la lista.
 
 Complejidad
+
 Mejor caso: O(n)
 
 Peor caso: O(n²)
@@ -71,6 +73,7 @@ Caso promedio: O(n²)
 El método de ordenamiento burbuja opera comparando elementos adyacentes y realizando intercambios si están en el orden incorrecto. Este proceso se repite hasta que la lista queda ordenada.
 
 Funcionamiento
+
 Se recorren los elementos de la lista comparando pares consecutivos.
 
 Si un valor es mayor que el siguiente, se intercambian.
@@ -78,6 +81,7 @@ Si un valor es mayor que el siguiente, se intercambian.
 Se repite el proceso hasta que no haya más cambios en un ciclo completo.
 
 Complejidad
+
 Mejor caso: O(n)
 
 Peor caso: O(n²)
@@ -88,6 +92,7 @@ Caso promedio: O(n²)
 Este algoritmo divide la lista en dos partes: una ordenada y otra no ordenada. En cada iteración, busca el elemento más pequeño en la parte desordenada y lo intercambia con el primer valor no ordenado.
 
 Funcionamiento
+
 Se busca el menor elemento en la lista.
 
 Se intercambia con el primer elemento no ordenado.
@@ -95,6 +100,7 @@ Se intercambia con el primer elemento no ordenado.
 Se repite hasta ordenar toda la lista.
 
 Complejidad
+
 Mejor caso: O(n²)
 
 Peor caso: O(n²)
@@ -105,6 +111,7 @@ Caso promedio: O(n²)
 Este algoritmo eficiente sigue el enfoque de "divide y vencerás". Separa la lista en dos mitades, ordena cada una recursivamente y luego las fusiona en una lista ordenada.
 
 Funcionamiento
+
 Si la lista tiene uno o ningún elemento, ya está ordenada.
 
 Se divide en dos partes.
@@ -114,6 +121,7 @@ Se ordena cada mitad con recursión.
 Se combinan ambas mitades ordenadas en una sola lista.
 
 Complejidad
+
 Mejor caso: O(n log n)
 
 Peor caso: O(n log n)
@@ -124,6 +132,7 @@ Caso promedio: O(n log n)
 Quick Sort es un método eficiente basado en "divide y vencerás". Selecciona un pivote, separa los elementos menores y mayores en dos sublistas y las ordena recursivamente.
 
 Funcionamiento
+
 Se elige un pivote.
 
 Se reorganizan los valores colocando los menores a la izquierda y los mayores a la derecha.
@@ -133,6 +142,7 @@ Se aplica Quick Sort a ambas partes.
 La lista queda ordenada cuando todas las sublistas están organizadas.
 
 Complejidad
+
 Mejor caso: O(n log n)
 
 Peor caso: O(n²)
@@ -143,6 +153,7 @@ Caso promedio: O(n log n)
 Este algoritmo usa una estructura de montículo (heap). Convierte la lista en un max-heap, extrae el mayor elemento y lo coloca en su posición final, repitiendo el proceso hasta que la lista esté ordenada.
 
 Funcionamiento
+
 Se construye un montículo máximo.
 
 Se intercambia el primer elemento con el último y se reduce el tamaño del montículo.
@@ -150,6 +161,7 @@ Se intercambia el primer elemento con el último y se reduce el tamaño del mont
 Se reorganiza el montículo y se repite el proceso hasta ordenar la lista.
 
 Complejidad
+
 Mejor caso: O(n log n)
 
 Peor caso: O(n log n)
@@ -160,6 +172,7 @@ Caso promedio: O(n log n)
 Shell Sort es una optimización del método de inserción. Permite intercambios a mayor distancia antes de ordenar elementos cercanos. Utiliza una secuencia de incrementos (gaps) para dividir la lista en grupos y ordenarlos, reduciendo progresivamente el gap hasta llegar a 1.
 
 Funcionamiento
+
 Se define una secuencia de gaps.
 
 Para cada gap, se ordenan los elementos separados por esa distancia.
@@ -169,6 +182,7 @@ Se reduce el gap hasta que sea 1.
 Se aplica una última inserción para finalizar el ordenamiento.
 
 Complejidad
+
 Mejor caso: O(n log n)
 
 Peor caso: O(n²)
