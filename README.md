@@ -44,6 +44,8 @@ Tienen ubicación al final del archivo y en forma de funciones. Como argumentos 
   #### Guardado de tiempos
 El tiempo pasado durante la ejecución de un algoritmo se guarda en un cronómetro activado previo a la ejecución de este y se para en cuanto acabe. Una vez se ejecute, el tiempo se pasa a una matriz que posteriormente utilizaremos para exportar los datos al archivo .csv. El promedio de las ejecuciones se guarda en la misma columna con la longitud y en la última fila.
 
+   #### Exportado de los datos
+Para exportar los datos se usó la librería de "fstream", la cual tiene una sintaxis parecida a la salida de datos a consola y fue sencilla de utilizar. Al archivo le dimos formato .csv.
 
 ## Explicación de algoritmos
 ### Inserción
@@ -188,3 +190,25 @@ Mejor caso: O(n log n)
 Peor caso: O(n²)
 
 Caso promedio: Depende de la secuencia de gaps.
+
+## Proyecto
+
+-**`sorting_time.cpp`**: Archivo de código fuente donde se ejecutan todos los procesos. Contiene la función principal main y las implementaciones de los algoritmos de ordenamiento. En este archivo se genera el arreglo, se ejecutan los métodos de ordenamiento y se exportan los resultados obtenidos.
+
+-**`README.md`**: Documento que incluye la descripción y detalles del proyecto.
+
+-**`Archivos CSV`**: Ficheros que almacenan los tiempos de ejecución y los promedios correspondientes a arreglos de la misma longitud.
+
+## Constantes globales
+
+NUM_PRUEBAS: Número de pruebas que se realizarán para las longitudes de los vectores.
+
+MIN_TAMANO: Tamaño mínimo del vector.
+
+MAX_TAMANO: Tamaño máximo del vector.
+
+INCREMENTO: Incremento en el la longitud del vector cada que pase una prueba.
+
+## Resultados
+
+El resultado que obtuvimos son los archivos con extensión .csv
