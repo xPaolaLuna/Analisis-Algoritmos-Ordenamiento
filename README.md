@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5586b43f-f2b0-4235-b30e-04d6b1f344e5)# Analisis de Algoritmos de Ordenamiento
+# Analisis de Algoritmos de Ordenamiento
 
 Es un programa que corre diferentes algoritmos en diferentes condiciones, de las cuales recupera el tiempo de ejecución de estos. Los algoritmos utilizados son los siguientes:
 
