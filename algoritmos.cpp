@@ -180,6 +180,8 @@ int main() {
 
     }
 
+        // Insersion
+    // Abre un archivo para escribir los tiempos
     ofstream outFileInsertion("1_Insercion_Ordenamiento.csv");
     if (!outFileInsertion.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -190,7 +192,8 @@ int main() {
         outFileInsertion << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileInsertion << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileInsertion << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileInsertion <<  tiempo_insercion[i][j] << ",";
@@ -204,6 +207,8 @@ int main() {
     outFileInsertion.close();
 
 
+    // Bubble
+    // Abre un archivo para escribir los tiempos
     ofstream outFileBubble("2_Burbuja_Ordenamiento.csv");
     if (!outFileBubble.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -214,7 +219,8 @@ int main() {
         outFileBubble << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileBubble << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileBubble << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileBubble <<  tiempo_burbuja[i][j] << ",";
@@ -228,6 +234,8 @@ int main() {
     outFileBubble.close();
 
 
+        // Selection
+    // Abre un archivo para escribir los tiempos
     ofstream outFileSelection("3_Seleccion_Ordenamiento.csv");
     if (!outFileSelection.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -238,7 +246,8 @@ int main() {
         outFileSelection << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileSelection << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileSelection << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileSelection <<  tiempo_seleccion[i][j] << ",";
@@ -251,7 +260,8 @@ int main() {
     }
     outFileSelection.close();
 
-       
+        // Merge
+    // Abre un archivo para escribir los tiempos
     ofstream outFileMerge("4_Mezcla_Ordenamiento.csv");
     if (!outFileMerge.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -262,7 +272,8 @@ int main() {
         outFileMerge << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileMerge << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileMerge << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileMerge <<  tiempo_mezcla[i][j] << ",";
@@ -276,6 +287,9 @@ int main() {
     outFileMerge.close();
 
 
+
+        // Quick
+    // Abre un archivo para escribir los tiempos
     ofstream outFileQuick("5_Rapido_Ordenamiento.csv");
     if (!outFileQuick.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -286,7 +300,8 @@ int main() {
         outFileQuick << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileQuick << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileQuick << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileQuick <<  tiempo_rapido[i][j] << ",";
@@ -300,6 +315,8 @@ int main() {
     outFileQuick.close();
 
 
+        // Heap
+    // Abre un archivo para escribir los tiempos
     ofstream outFileHeap("6_Monticulos_Ordenamiento.csv");
     if (!outFileHeap.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -310,7 +327,8 @@ int main() {
         outFileHeap << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileHeap << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileHeap << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileHeap <<  tiempo_monticulo[i][j] << ",";
@@ -324,6 +342,8 @@ int main() {
     outFileHeap.close();
 
 
+        // Shell
+    // Abre un archivo para escribir los tiempos
     ofstream outFileShell("7_Shell_Ordenamiento.csv");
     if (!outFileShell.is_open()) {
         cerr << "No se pudo escribir. Revise el estado del archivo en carpeta." << endl;
@@ -334,7 +354,8 @@ int main() {
         outFileShell << "Tama\361o " << contador_longitud << ",";
         contador_longitud += INCREMENTO;
     }
-    for (int i = 0; i < iteraciones; i++){
+    outFileShell << endl;
+    for (int i = 1; i < iteraciones; i++){
         outFileShell << i << ",";
         for (int j = 1; j < por_iterar; j++){
             outFileShell <<  tiempo_shell[i][j] << ",";
@@ -352,6 +373,7 @@ int main() {
     return 0;
 }
 
+// Copiar arreglo
 void duplicar_arreglo(int arreglo[], int desordenado[], int longitud) {
     for (int i = 0; i < longitud; i++) {
         desordenado[i] = arreglo[i];
