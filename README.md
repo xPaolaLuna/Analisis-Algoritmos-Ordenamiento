@@ -1,4 +1,4 @@
-# Analisis de Algoritmos de Ordenamiento
+![image](https://github.com/user-attachments/assets/5586b43f-f2b0-4235-b30e-04d6b1f344e5)# Analisis de Algoritmos de Ordenamiento
 
 Es un programa que corre diferentes algoritmos en diferentes condiciones, de las cuales recupera el tiempo de ejecución de estos. Los algoritmos utilizados son los siguientes:
 
@@ -214,6 +214,8 @@ INCREMENTO: Incremento en el la longitud del vector cada que pase una prueba.
 El resultado que obtuvimos son los archivos con extensión .csv ubicados en la carpeta donde se guardó y ejectuó el proyecto. Estos datos se pueden observar de mejor manera en un editor de hojas de cálculo como lo es excel.
 
 ## Conclusiones
+Concluímos que en promedio hay ciertos algoritmos mejores que otros, y según nuestros resultados, el orden en base a los mejores con grandes cantidades de datos son:
+
 
 ## Alumna
 
